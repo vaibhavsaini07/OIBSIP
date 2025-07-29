@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Saini - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">V</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="intro-line">Hello, I'm</span>
+                    <h1>Vaibhav Saini</h1>
+                    <h2>Fullstack Developer</h2>
+                    <p>I design and code beautifully simple things, and I love what I do.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                        <a href="#portfolio" class="btn btn-secondary">My Work</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="myphoto.jpeg" alt="A photo of Vaibhav Saini">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about container reveal">
+            <h2 class="section-title">Introduction</h2>
+            <h3>A bit about me</h3>
+            <p>A Full-Stack Developer with expertise in building complete and scalable web applications. I specialize in
+                the MERN stack (MongoDB, Express, React, Node.js) and am passionate about writing clean, efficient, and
+                maintainable code. Explore my projects below to see my skills in action.</p>
+
+            <!-- Resume Section -->
+            <section id="resume" class="resume container reveal">
+                <h2 class="section-title">Resume</h2>
+                <h3>My Professional Journey</h3>
+                <p>For a detailed look at my skills, experience, and education, please download my resume. It provides a
+                    comprehensive overview of my qualifications and the value I can bring to your team or project.</p>
+                <a href="Vaibhav.resume.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="services container reveal">
+                <h2 class="section-title">What I Do</h2>
+                <h3>Full Stack Developer</h3>
+                <p>Developing robust and scalable web applications from the front-end to the back-end.</p>
+                </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio" class="portfolio container reveal">
+                <h2 class="section-title">My Work</h2>
+                <h3>Selected Projects</h3>
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item">
+                        <img src="Screenshot 2025-07-28 at 9.20.45 PM.png" alt="Project 1 Screenshot">
+                        <div class="portfolio-overlay">
+                            <h5>ExpressVPN Landing Page</h5>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="portfolio-item">
+                        <img src="Screenshot 2025-07-28 at 9.25.07 PM.png" alt="Project 2 Screenshot">
+                        <div class="portfolio-overlay">
+                            <h5>Temperature converter</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact container reveal">
+                <h2 class="section-title">Get In Touch</h2>
+                <h3>Let's Build Something Great</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vaibhav Saini. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

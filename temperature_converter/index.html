@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
+
+
+    <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md mx-4">
+
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Temperature Converter</h1>
+
+        <div class="mb-4">
+            <input type="number" id="temperatureInput" placeholder="Enter temperature"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+        </div>
+
+        <div class="flex justify-center items-center mb-6 space-x-6">
+            <label for="celsius" class="flex items-center cursor-pointer">
+                <input type="radio" id="celsius" name="unit" value="celsius" class="form-radio h-5 w-5 text-blue-600"
+                    checked>
+                <span class="ml-2 text-gray-700">Celsius</span>
+            </label>
+            <label for="fahrenheit" class="flex items-center cursor-pointer">
+                <input type="radio" id="fahrenheit" name="unit" value="fahrenheit"
+                    class="form-radio h-5 w-5 text-blue-600">
+                <span class="ml-2 text-gray-700">Fahrenheit</span>
+            </label>
+        </div>
+
+        <button id="convertBtn"
+            class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+            Convert
+        </button>
+
+        <div id="resultArea" class="mt-6 text-center text-xl font-medium text-gray-800"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
